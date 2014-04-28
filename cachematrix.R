@@ -1,4 +1,4 @@
-## Put comments here that give an overall description of what your
+# Put comments here that give an overall description of what your
 ## functions do
 
 
@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
         get <- function() x                       #  just returns x (from one level up) when run
         setinv <- function(solve) s <<- solve     # function to set s using solve
         getinv <- function() s                    # returns s (solution), when called as x$getinv
-        list(set = set, get = get, ...=           # the returned value is a list of stuff from above.
+        list(set = set, get = get,           # the returned value is a list of stuff from above.
              setinv = setinv,
              getinv = getinv)
 }
